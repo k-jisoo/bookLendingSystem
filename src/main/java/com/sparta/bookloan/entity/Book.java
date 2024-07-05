@@ -1,10 +1,8 @@
 package com.sparta.bookloan.entity;
 
 import com.sparta.bookloan.dto.BookRequestDto;
-import com.sparta.bookloan.dto.BookResponseDto;
 import jakarta.persistence.*;
 import lombok.Getter;
-import lombok.Setter;
 
 import java.util.Date;
 

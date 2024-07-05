@@ -1,19 +1,13 @@
 package com.sparta.bookloan.service;
 
-import com.sparta.bookloan.dto.BookResponseDto;
 import com.sparta.bookloan.dto.UserRequestDto;
 import com.sparta.bookloan.dto.UserResponseDto;
 import com.sparta.bookloan.entity.User;
 import com.sparta.bookloan.repository.UserRepository;
-import jakarta.persistence.EntityManager;
 import lombok.RequiredArgsConstructor;
-import org.springframework.dao.DataAccessException;
-import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import org.springframework.transaction.interceptor.TransactionAspectSupport;
 
 import java.net.URI;
 

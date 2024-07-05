@@ -62,9 +62,7 @@ public class LoanService {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST)
                     .body(new LoanResponseDto("This book is already returned. bookId: " + bookId));
 
-        FoundLoanList.stream().filter(loan -> !loan.isReturnState()).forEach(loan -> {
-            loan.setReturnState(true);
-        });
+        FoundLoanList.stream().filter(loan -> !loan.isReturnState()).forEach(loan -> loan.setReturnState(true));
 
         return ResponseEntity.status(HttpStatus.ACCEPTED)
                 .body(new LoanResponseDto("This book is already returned. bookId: " + bookId));

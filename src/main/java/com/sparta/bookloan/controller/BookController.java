@@ -3,7 +3,6 @@ package com.sparta.bookloan.controller;
 import com.sparta.bookloan.dto.BookRequestDto;
 import com.sparta.bookloan.dto.BookResponseDto;
 import com.sparta.bookloan.service.BookService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

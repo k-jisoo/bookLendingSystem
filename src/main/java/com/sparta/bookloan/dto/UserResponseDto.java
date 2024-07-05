@@ -24,16 +24,4 @@ public class UserResponseDto {
         this.address = user.getAddress();
     }
 
-    public UserResponseDto(UserRequestDto UserrequestDto) {
-        if (UserrequestDto == null) {
-            throw new IllegalArgumentException("Book parameter is null");
-        }
-
-        this.id = UserrequestDto.getId();
-        this.username = UserrequestDto.getUsername();
-        this.gender = UserrequestDto.getGender();
-        this.phone = UserrequestDto.getPhone();
-        this.address = UserrequestDto.getAddress();
-    }
-
 }
